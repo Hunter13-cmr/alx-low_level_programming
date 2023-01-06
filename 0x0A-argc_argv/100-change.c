@@ -33,10 +33,10 @@ while (cents > 0)
 		continue;
 	}
 	if ((cents - 5) >= 0)
-		{
-			cents -= 5;
-			continue;
-		}
+	{
+		cents -= 5;
+		continue;
+	}
 	if ((cents - 2) >= 0)
 	{
 		cents -= 2;
