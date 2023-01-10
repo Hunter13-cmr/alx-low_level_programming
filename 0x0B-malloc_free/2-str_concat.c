@@ -18,14 +18,14 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 
 	a = 0;
-	while (s1[a] != '\0')
+		while (s1[a] != '\0')
 		{
 			my_array[c] = s1[a];
 			a++;
 			c++;
 		}
 	b = 0;
-	while (s2[b] != '\0')
+		while (s2[b] != '\0')
 		{
 			my_array[c] = s2[b];
 			b++;
