@@ -1,39 +1,37 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
 /**
-* str_concat - concatenates two strings
-* @s1: first string
-* @s2: second string
-* Return: pointer to new space in memory or null
-**/
+* str_concat - function that concatenates two strings
+* @s1: paramater for string 1
+* @s2: parameter for string 2
+* Return: Always 0.
+*/
 char *str_concat(char *s1, char *s2)
 {
-	char *strDup;
-	int i, j;
-	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
-		i = j = 0;
-	while (s1[i] != '\0')
-		i++;
-	while (s2[j] != '\0')
-		j++;
-		strDup = malloc(sizeof(char) * (i + j + 1));
-	if (strDup == NULL)
+	int a, b, c;
+	char *my_array;
+
+	c = 0;
+	my_array = malloc(sizeof(*s1 + *s2));
+
+	if (my_array == NULL)
 		return (NULL);
-		i = j = 0;
-	while (s1[i] != '\0')
+
+	a = 0;
+	while (s1[a] != '\0')
 		{
-			strDup[i] = s1[i];
-			i++;
+			my_array[c] = s1[a];
+			a++;
+			c++;
 		}
-	while (s2[j] != '\0')
+	b = 0;
+	while (s2[b] != '\0')
 		{
-			strDup[i] = s2[j];
-			i++, j++;
+			my_array[c] = s2[b];
+			b++;
+			c++;
 		}
-		strDup[i] = '\0';
-		return (strDup);
+
+		return (my_array);
+		free(my_array);
 }
