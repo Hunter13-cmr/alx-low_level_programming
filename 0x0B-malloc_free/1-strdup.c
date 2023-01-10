@@ -25,5 +25,5 @@ while (str[j] != '\0')
 		strDup[j] = str[j];
 		j++;
 	}
-	return (strDup);
+return (strDup);
 }
