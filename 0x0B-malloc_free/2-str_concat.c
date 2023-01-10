@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
-* str_concat - function that concatenates two strings
+* str_concat("Hello", NULL) - function that concatenates two strings
 * @s1: paramater for string 1
 * @s2: parameter for string 2
 * Return: Always 0.
